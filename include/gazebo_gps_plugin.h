@@ -100,9 +100,9 @@ private:
   // Home defaults to Zurich Irchel Park
   // @note The home position can be specified using the environment variables:
   // PX4_HOME_LAT, PX4_HOME_LON, and PX4_HOME_ALT
-  double lat_home_ = kDefaultHomeLatitude;
-  double lon_home_ = kDefaultHomeLongitude;
-  double alt_home_ = kDefaultHomeAltitude;
+  double lat_home = (double)31.936612 * M_PI / 180.0;  // rad
+  double lon_home = (double)118.793211 * M_PI / 180.0;   // rad
+  double alt_home_ = 0.0;
   double world_latitude_ = 0.0;
   double world_longitude_ = 0.0;
   double world_altitude_ = 0.0;
